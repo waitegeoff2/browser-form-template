@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="template-form" novalidate>
+        <p>
+            <label for="form-email">
+                <span id="add-email">Email: </span>
+            </label>
+            <input type="email" id="form-email" name="form-email" required>
+            <span class="error" aria-live="polite"></span>
+        </p>
+        <p>
+            <label for="form-country">
+                <span id="add-email">Country: </span>
+            </label>
+            <input type="text" id="form-country" name="form-country" required>
+            <span class="error" aria-live="polite"></span>
+        </p>
+        <p>
+            <label for="form-postal-code">
+                <span id="add-postal-code">Postal code: </span>
+            </label>
+            <input type="text" id="form-postal-code" name="form-postal-code" required>
+            <span class="error" aria-live="polite"></span>
+        </p>
+        <p>
+            <label for="form-password">
+                <span id="add-password">Password: </span>
+            </label>
+            <input type="password" id="form-password" name="form-password" required>
+            <span class="error" aria-live="polite"></span>
+        </p>
+        <p>
+            <label for="form-password-confirm">
+                <span id="confirm-password">Confirm password: </span>
+            </label>
+            <input type="password" id="form-password-confirm" name="form-password-confirm" required>
+            <span class="error" aria-live="polite"></span>
+        </p>
+        <p>
+            <button class="submit-button" type="submit">Submit</button>
+        </p>
+
+</body>
+</html>
