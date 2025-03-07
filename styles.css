@@ -30,6 +30,6 @@ input:focus:invalid {
     box-sizing: border-box;
   }
 
-.active {
+.error.active {
     padding: 0.3rem;
 }

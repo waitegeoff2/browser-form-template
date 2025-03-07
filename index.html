@@ -19,21 +19,21 @@
             <label for="form-country">
                 <span id="add-email">Country: </span>
             </label>
-            <input type="text" id="form-country" name="form-country" required>
+            <input type="text" id="form-country" name="form-country" minlength="3" required>
             <span class="error" aria-live="polite"></span>
         </p>
         <p>
             <label for="form-postal-code">
-                <span id="add-postal-code">Postal code: </span>
+                <span id="add-postal-code">Zip code: </span>
             </label>
-            <input type="text" id="form-postal-code" name="form-postal-code" required>
+            <input type="text" id="form-postal-code" name="form-postal-code" pattern="(\d{5}([\-]\d{4})?)" required>
             <span class="error" aria-live="polite"></span>
         </p>
         <p>
             <label for="form-password">
                 <span id="add-password">Password: </span>
             </label>
-            <input type="password" id="form-password" name="form-password" required>
+            <input type="password" id="form-password" name="form-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
             <span class="error" aria-live="polite"></span>
         </p>
         <p>
