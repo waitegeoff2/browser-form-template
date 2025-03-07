@@ -109,6 +109,9 @@ form.addEventListener("submit", (event) =>{
         // if the validity is now valid, show the error and prevent form from submit
         showPasswordConfirmError();
         event.preventDefault();
+    } else if ((!passwordEnter.validity.valid)) {
+        showPasswordConfirmError();
+        event.preventDefault();
     }
 })
 
